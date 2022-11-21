@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora RC</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="main">
+    <div class="header block">
+      <h1>Calculadora RC <var id="version">#</var></h1>
+      <h3><a href="https://www.youtube.com/watch?v=xcwb4PPBG5M&ab_channel=WRKits" target="_blank">&#8811 Baseada nesse vídeo do WR Kits &#8810</a></h3>
+    </div>
+
+    <div class="inputs block">
+      <div>
+        <label for="inFrequency">Digite a Frequência:</label>
+        <br>
+        <input type="number" id="inFrequency" name="inFrequency">
+        <select id="scientificNotationOptionForFreq" name="scientificNotationOptionForFreq">
+          <option value="GHz">GHz</option>
+          <option value="MHz">MHz</option>
+          <option value="kHz">kHz</option>
+          <option value="Hz" selected>Hz</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="inCapacitance">Digite uma Capacitância:</label>
+        <br>
+        <input type="number" id="inCapacitance" name="inCapacitance" value="10">
+        <select id="scientificNotationOptionForCap" name="scientificNotationOptionForCap">
+          <option value="F" selected>F</option>
+          <option value="mF">mF</option>
+          <option value="uF">uF</option>
+          <option value="nF">nF</option>
+        </select>
+      </div>
+
+      <div>
+        <button class="centerButton" onclick="calculateRC()">Calcular</button>
+      </div>
+    </div>
+
+    <div class="result block">
+      Resultado:
+      <p id="resultContent">
+        Frequência: # Hz <br>
+        Capacitor: # F <br>
+        Resistor: # &#937
+      </p>
+
+      <button class="centerButton" onclick="clearAll()">Limpar</button>
+    </div>
+    <footer>by <a href="https://dacla-automacao.github.io/site/" target="_blank"><strong>DACLA Automação</strong></a></footer>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
