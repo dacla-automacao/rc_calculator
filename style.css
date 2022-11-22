@@ -4,21 +4,19 @@ body {
 
 .block {
   background-color: aliceblue;
-  border: 1px solid grey;
   border-radius: 5px;
   margin: 1rem;
   box-shadow: 0 0 5px grey;
 }
 
 .main {
-  /* background-color: yellow; */
   max-width: 500px;
   margin: 2rem auto;
 }
 
 .header {
-  /* background-color: red; */
   text-align: center;
+  padding: .5rem;
 }
 
 var {
@@ -35,17 +33,14 @@ var {
 }
 
 .result {
-  /* background-color: blue; */
   padding: 1rem;
 }
 
 .resultContent {
-  /* background-color: yellow; */
   height: 100px;
 }
 
 footer {
-  /* background-color: violet; */
   text-align: center;
   padding: 1rem;
 }
